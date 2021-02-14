@@ -1,0 +1,29 @@
+@charset 'UTF-8';
+
+@use './test/test1';
+@use './test/test2';
+
+body {
+
+  $var: 40px;
+
+  > * {
+    color: red;
+  }
+
+  section {
+    width: 50px + 30px;
+  }
+
+  article {
+    width: 1px + $var;
+  }
+
+  main {
+    width: 1000px;
+  }
+
+  aside {
+    height: auto;
+  }
+}

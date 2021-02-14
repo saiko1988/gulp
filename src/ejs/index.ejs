@@ -1,0 +1,33 @@
+<%_ 
+const data = {
+  meta: {
+    title: 'TITLE',
+    description: 'DESC',
+    keywords: ['KEYWORDS']
+  },
+  name: 'indexPage',
+  title: 'コンパイルテスト',
+  breadcrumb: [
+    { name: 'HOME', link: '/', },
+    { name: '会社案内', link: '/company/', },
+    { name: 'アクセス', link: '', },
+  ],
+}
+_%>
+<!DOCTYPE html>
+<html lang="ja">
+<%- include( '/src/ejs/template/_head.ejs', {data: data} ) %>
+
+<body>
+  <%- include( '/src/ejs/template/_header.ejs', {data: data} ) %>
+  <main class="main -<%= data.name %>">
+    <%- include( '/src/ejs/template/_breadcrumb.ejs', {data: data} ) %>
+    <%# page content %>
+    <h2><%= data.title %></h2>
+    <p>テストテストテストテスト</p>
+    <%# / page content %>
+  </main>
+  <%- include( '/src/ejs/template/_footer.ejs', {data: data} ) %>
+</body>
+
+</html>

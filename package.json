@@ -1,0 +1,25 @@
+{
+  "name": "20201016_test_gulp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "css-declaration-sorter": "^6.0.2",
+    "ejs": "^3.1.5",
+    "fibers": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-ejs": "^5.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "postcss": "^8.2.2",
+    "sass": "^1.27.0"
+  }
+}

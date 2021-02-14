@@ -1,0 +1,10 @@
+<%_
+const {breadcrumb} = data;
+function createListItem(breadcrumb){
+  return breadcrumb.map( crumb => {
+    return crumb.link ? `<li><a href="${crumb.link}">${crumb.name}</a></li>`
+                      : `<li>${crumb.name}</li>`;
+    } ).join('');
+}
+_%>
+<ul><%- createListItem(breadcrumb) %></ul>

@@ -1,0 +1,35 @@
+html {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 0;
+}
+
+body {
+  all: initial;
+}
+
+h1 {
+  all: inherit;
+}
+
+p {
+  display: block;
+}
+
+body > * {
+  color: red;
+}
+body section {
+  width: 80px;
+}
+body article {
+  width: 41px;
+}
+body main {
+  width: 1000px;
+}
+body aside {
+  height: auto;
+}
+/*# sourceMappingURL=style.css.map */
